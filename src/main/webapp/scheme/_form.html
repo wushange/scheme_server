@@ -1,0 +1,28 @@
+<fieldset class="solid">
+    <legend>创建日程</legend>
+    <input type="hidden" name="scheme.id" value="#(scheme.id??)"/>
+    <div>
+        <label>Scheme类型</label>
+        <select id="ss" name="scheme.schemetype">
+            <option  value=0 >课程</option>
+            <option value=1>事件</option>
+            <option value=2>会议</option>
+        </select>
+    </div>
+    <div>
+        <label>标题</label>
+        <input type="text" name="scheme.title" value="#(scheme.title??)"/>#(titleMsg)
+    </div>
+    <div>
+        <label>内容</label>
+        <textarea name="scheme.scheme" cols="80" rows="10">#(scheme.scheme??)</textarea>#(contentMsg)
+    </div>
+    <div>
+        <label>日期</label>
+        <input name="scheme.schemetime" value="#(scheme.schemetime??)" type="date"/>
+    </div>
+    <div>
+        <label>&nbsp;</label>
+        <input value="提交并同步到客户端" type="submit">
+    </div>
+</fieldset>

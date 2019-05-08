@@ -1,3 +1,5 @@
+
+
 /*
 Navicat MySQL Data Transfer
 
@@ -12,6 +14,11 @@ File Encoding         : 65001
 
 Date: 2019-05-07 22:37:12
 */
+
+CREATE DATABASE jfinal_demo;
+
+USE jfinal_demo;
+
 
 SET FOREIGN_KEY_CHECKS=0;
 

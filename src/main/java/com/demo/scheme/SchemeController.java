@@ -50,6 +50,7 @@ public class SchemeController extends Controller {
     public void save() {
         JPushClient jpushClient = new JPushClient("553d1ab3674cefbaa483cc34", "0c76fdebe1504dd8e37f1cca", null, ClientConfig.getInstance());
         Scheme scheme = getBean(Scheme.class);
+        scheme.se
 
         String jsonMsg = Json.getJson().toJson(scheme);
         System.out.print("---"+ jsonMsg);
